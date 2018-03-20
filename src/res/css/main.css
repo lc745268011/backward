@@ -22,7 +22,7 @@
 .reg-list ul li.city .right .active .jt{width: 0.33rem;position: absolute;right: 0.36rem;top: 50%;transform: translateY(-50%)}
 .reg-list ul li.city .right ul{display: none;position: absolute;top: 0.54rem;background: #fff;color: red;z-index: 999;width: 4.62rem;overflow-y: scroll;height: 2.72rem;}
 .reg-list ul li.city .right li{overflow: auto;border-top: 1px solid #eee;width: 100%;text-align: center;margin-top: 0;color: #999;padding: 0.06rem 0}
-.regSubmit{width: 2.63rem;margin: 0.5rem auto}
+.regSubmit{width: 2.63rem;margin: 0.5rem auto;background-image: url("../img/regSubmit.png");height: 0.61rem;background-size: cover;text-align: center;color: #fff;line-height: 0.55rem}
 .regSubmit img{width: 2.63rem;}
 .explain{width: 6.22rem;margin: 0 auto;font-size: 0.2rem;color: #000}
 .time .box{margin: 0 0.2rem;background: #ffa746;color: #fff;padding: 0 0.2rem}
