@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <link rel="stylesheet" href="../res/css/reset.css"/>
+    <script src="../res/js/jquery-1.10.2.min.js"></script>
+    <title></title>
+</head>
+<body class="bg">
+<div class="title">
+    <img src="../res/img/title.png" alt="" width="100%">
+</div>
+<div class="title-long">
+    客户经理注册
+</div>
+<div class="reg-list">
+    <ul>
+        <li class="vCenter">
+            <div class="left vCenter">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请输入姓名">
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">发展编码</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请输入（170开头）">
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">三级部门</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请输入部门编码">
+            </div>
+        </li>
+        <li class="vCenter city">
+            <div class="left vCenter">所属地市</div>
+            <div class="right vCenter">
+                <div class="active box" onclick="active(this)">
+                    <span>请选择所属地市</span> <img src="../res/img/jt.png" alt="" class="jt">
+                </div>
+                <ul>
+                    <li onclick="choose(this)">1</li>
+                    <li onclick="choose(this)">2</li>
+                    <li onclick="choose(this)">3</li>
+                    <li onclick="choose(this)">4</li>
+                    <li onclick="choose(this)">5</li>
+                </ul>
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">地市编码</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请输入地市编码">
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">手机号码</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="手机号码即为登录账号">
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请输入密码">
+            </div>
+        </li>
+        <li class="vCenter">
+            <div class="left vCenter">确认密码</div>
+            <div class="right vCenter">
+                <input type="text" class="box" placeholder="请确认密码">
+            </div>
+        </li>
+    </ul>
+    <div class="regSubmit">
+        <img src="../res/img/regSubmit.png" alt="">
+    </div>
+    <div class="explain">
+        注册说明：<br>
+        1、本页面注册完成后，下次点击菜单直接进入营销预案填写页面，填写的手机号码为登录PC<br>
+        端平台的登录账户，密码为登录PC端的密码<br>
+        2、请认真填写客户经理发展编码，填写错误影响注册和客户落收归属<br>
+        3、若有问题请联系：张经理 15662436695
+    </div>
+</div>
+<div class="copyright" style="margin: 0.5rem 0">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
+</div>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        function active(obj) {
+            event.stopImmediatePropagation();
+            $(obj).siblings().slideToggle();
+        }
+        function choose(obj ) {
+            $(obj).parent().siblings().find('span').text($(obj).text()).parent().siblings().slideUp()
+        }
+        $(document).bind("click",function(){
+            $('.city ul').slideUp()
+        })
+</script>
+</body>
+</html>

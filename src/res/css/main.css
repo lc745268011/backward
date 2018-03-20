@@ -10,4 +10,19 @@
 .login form .loginBtn{height: 0.7rem;line-height: 0.7rem;text-align: center;width: 5.74rem;margin: 0 auto;background: #00b7f0;color: #fff;font-size: 0.2rem;margin-top: 0.5rem;border: 0;border-radius: 0.1rem}
 .login .login-link{font-size: 0.18rem;width: 5.74rem;margin: 0 auto;margin-top: 0.3rem}
 .login .login-link a{color: #c1c1c1;}
-.copyright{text-align: center;color: #fff;font-size: 0.16rem;margin-top: 2.7rem}
+.copyright{text-align: center;color: #fff;font-size: 0.16rem;margin: 2.7rem 0 0.5rem}
+.title-long{background-image: url("../img/title-long.png");background-repeat: no-repeat;background-size: 100%;width: 2.24rem;text-align: center;margin: 0 auto;
+    color: #ffffff;font-size: 0.2rem;height: 0.44rem;margin-top: 0.3rem;line-height: 0.44rem;margin-bottom: 0.1rem;}
+.reg-list ul li{width: 6.22rem;height: 0.54rem;margin: 0 auto;margin-top: 0.4rem}
+.reg-list ul li .left{width: 1.6rem;color: #fff;background: #3e42e3;text-align: center;height: 0.54rem;font-size: 0.24rem;border-radius: 0.06rem 0 0 0.06rem}
+.reg-list ul li .right{width: 4.62rem;background: #fff;height: 0.54rem;border: 0;border-radius: 0 0.06rem 0.06rem 0}
+.reg-list ul li .right .box{width: 100%;border: 0;padding: 0 0.36rem;font-size: 0.24rem}
+.reg-list ul li.city .right{position: relative}
+.reg-list ul li.city .right .active{position: relative}
+.reg-list ul li.city .right .active .jt{width: 0.33rem;position: absolute;right: 0.36rem;top: 50%;transform: translateY(-50%)}
+.reg-list ul li.city .right ul{display: none;position: absolute;top: 0.54rem;background: #fff;color: red;z-index: 999;width: 4.62rem;overflow-y: scroll;height: 2.72rem;}
+.reg-list ul li.city .right li{overflow: auto;border-top: 1px solid #eee;width: 100%;text-align: center;margin-top: 0;color: #999;padding: 0.06rem 0}
+.regSubmit{width: 2.63rem;margin: 0.5rem auto}
+.regSubmit img{width: 2.63rem;}
+.explain{width: 6.22rem;margin: 0 auto;font-size: 0.2rem;color: #000}
+.time .box{margin: 0 0.2rem;background: #ffa746;color: #fff;padding: 0 0.2rem}
