@@ -8,16 +8,39 @@
     <meta name="author" content=""/>
     <!--移动设备-->
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="viewport"
-          content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
     <link rel="stylesheet" href="./res/css/main.css"/>
-    <link rel="stylesheet" href="./res/css/H-ui.reset.css"/>
-    <script src="./res/js/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="./res/css/reset.css"/>
+    <script src="./res/js/jquery-1.10.2.min.js"></script>
     <title></title>
 </head>
-<body>
-<div>
-
+<body class="bg">
+<div class="title">
+    <img src="./res/img/title.png" alt="" width="100%">
+</div>
+<div class="login">
+    <div class="login-title">用户登录</div>
+    <form action="">
+        <div class="username vCenter">
+            <img src="./res/img/username.png" alt="">
+            <input type="text" placeholder="手机号/邮箱">
+        </div>
+        <div class="userpass vCenter">
+            <img src="./res/img/password.png" alt="">
+            <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="loginBtn">
+            登录
+        </div>
+    </form>
+    <div class="login-link cl">
+        <a href="" class="l">用户注册</a>
+        <a href="" class="r">忘记密码？</a>
+    </div>
+</div>
+<div class="copyright">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
 </div>
 <script>
         (function (doc, win) {
@@ -32,10 +55,6 @@
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
-        $('.list').click(function(){
-            $(this).addClass('active');
-            $('.list').not(this).removeClass('active')
-        })
 </script>
 </body>
 </html>

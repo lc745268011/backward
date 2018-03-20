@@ -1,0 +1,13 @@
+.l{float: left}
+.r{float: right}
+.vCenter{display: flex;display: -webkit-box; display: -moz-box;display: -webkit-flex;-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
+.bg{background-image: url(../img/bg.jpg);}
+.login{width: 6.9rem;height: 5.58rem;background: #fff;border-radius: 0.1rem;margin: 0 auto;margin-top: 0.84rem;}
+.login .login-title{font-size: 0.18rem;text-align: center;height: 0.92rem;line-height: 0.92rem;border-bottom: 0.02rem solid #959595;margin-bottom: 0.1rem;}
+.login form>div{width: 5.74rem;height: 0.82rem;border: 1px solid #d6d6d6;margin: 0 auto;margin-top: 0.5rem;padding: 0 0.24rem;box-sizing: border-box}
+.login form>div input{border: 0;width: 4.9rem;height: 0.7rem;padding: 0 0.24rem;font-size: 0.2rem}
+.login form>div img{width: 0.4rem;}
+.login form .loginBtn{height: 0.7rem;line-height: 0.7rem;text-align: center;width: 5.74rem;margin: 0 auto;background: #00b7f0;color: #fff;font-size: 0.2rem;margin-top: 0.5rem;border: 0;border-radius: 0.1rem}
+.login .login-link{font-size: 0.18rem;width: 5.74rem;margin: 0 auto;margin-top: 0.3rem}
+.login .login-link a{color: #c1c1c1;}
+.copyright{text-align: center;color: #fff;font-size: 0.16rem;margin-top: 2.7rem}
