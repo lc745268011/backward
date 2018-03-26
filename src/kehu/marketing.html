@@ -153,16 +153,6 @@
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
-        function active(obj) {
-            event.stopImmediatePropagation();
-            $(obj).siblings().slideToggle();
-        }
-        function choose(obj ) {
-            $(obj).parent().siblings().find('span').text($(obj).text()).parent().siblings().slideUp()
-        }
-        $(document).bind("click",function(){
-            $('.city ul').slideUp()
-        })
 </script>
 <script>
     $(document).ready(function(){

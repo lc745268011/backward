@@ -1,6 +1,6 @@
 .l{float: left}
 .r{float: right}
-.vCenter{display: flex;display: -webkit-box; display: -moz-box;display: -webkit-flex;-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
+.vCenter{display: flex;display: -webkit-box; display: -moz-box;display: -webkit-flex;-webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
 .bg{background-image: url(../img/bg.jpg);}
 .login{width: 6.9rem;height: 5.58rem;background: #fff;border-radius: 0.1rem;margin: 0 auto;margin-top: 0.84rem;}
 .login .login-title{font-size: 0.18rem;text-align: center;height: 0.92rem;line-height: 0.92rem;border-bottom: 0.02rem solid #959595;margin-bottom: 0.1rem;}
@@ -14,12 +14,12 @@
 .title-long{background-image: url("../img/title-long.png");background-repeat: no-repeat;background-size: 100%;width: 2.24rem;text-align: center;margin: 0 auto;
     color: #ffffff;font-size: 0.2rem;height: 0.44rem;margin-top: 0.3rem;line-height: 0.44rem;margin-bottom: 0.1rem;}
 .reg-list ul li{width: 6.22rem;height: 0.54rem;margin: 0 auto;margin-top: 0.4rem}
-.reg-list ul li .left{width: 1.6rem;color: #fff;background: #3e42e3;text-align: center;height: 0.54rem;font-size: 0.24rem;border-radius: 0.06rem 0 0 0.06rem}
+.reg-list ul li .left{width: 1.6rem;color: #fff;background: #3e42e3;text-align: center;height: 0.54rem;font-size: 0.24rem;border-radius: 0.06rem 0 0 0.06rem;-webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
 .reg-list ul li .right{width: 4.62rem;background: #fff;height: 0.54rem;border: 0;border-radius: 0 0.06rem 0.06rem 0}
 .reg-list ul li .right .box{width: 100%;border: 0;padding: 0 0.36rem;font-size: 0.24rem}
 .reg-list ul li.city .right{position: relative}
 .reg-list ul li.city .right .active{position: relative}
-.reg-list ul li.city .right .active .jt{width: 0.33rem;position: absolute;right: 0.36rem;top: 50%;transform: translateY(-50%)}
+.jt{width: 0.33rem;position: absolute;right: 0.36rem;top: 50%;transform: translateY(-50%)}
 .reg-list ul li.city .right ul{display: none;position: absolute;top: 0.54rem;background: #fff;color: red;z-index: 999;width: 4.62rem;overflow-y: scroll;height: 2.72rem;}
 .reg-list ul li.city .right li{overflow: auto;border-top: 1px solid #eee;width: 100%;text-align: center;margin-top: 0;color: #999;padding: 0.06rem 0}
 .regSubmit{width: 2.63rem;margin: 0.5rem auto;background-image: url("../img/regSubmit.png");height: 0.61rem;background-size: cover;text-align: center;color: #fff;line-height: 0.55rem}
@@ -39,3 +39,27 @@
 .marketing1 ul li{background: url("../img/marketingLi.png");width: 1.95rem;height: 0.6rem;background-size: 100% 100%;color: #fff;float: left;margin-top: 0.4rem}
 .marketing1 ul li label{margin-right: 0.2rem}
 .marketing1 ul li:nth-child(2n){margin-left: 1.4rem}
+.shaked {padding: 0.28rem 0.45rem}
+.shaked>div{margin-bottom: 0.36rem}
+.shaked .title{width: 0.96rem;font-size: 0.22rem;margin-right: 0.2rem;}
+.shaked .infoBox{width: 4.8rem;border: 1px solid #9c9c9c;padding: 0 0.2rem;border-radius: 0.08rem;color: #bcbcbc;font-size: 0.24rem;box-sizing: border-box;-webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
+.shaked .infoBox.cl{padding: 0}
+.shaked .infoBox input{height: 0.55rem;line-height: 0.55rem;width: 100%;box-sizing: border-box;border: 0;font-size: 0.24rem;}
+.shaked .infoBox .num{width: 0.65rem;height: 0.3rem;line-height: 0.3rem;background: #3e42e3;color: #fff;text-align: center;margin: 0 0.1rem}
+.shaked .infoBox input[type="radio"]{width: 0.2rem}
+.shaked .infoBox label{margin-right: 0.16rem}
+.shakedBox .yys{width: 5.88rem;height: 0.56rem;background: #3e42e3;color: #fff;}
+.shakedBox .yys li{width: 25%;text-align: center;border-right: 1px solid #fff;box-sizing: border-box}
+.shakedBox .yys li:last-child{border-right: 0;}
+.shakedBox .syfw li{margin-right: 0.1rem}
+.shakedBox .yys li label,.bg .syfw li label{margin-right: 0.1rem}
+.shakedBox table{width: 100%; border: 1px solid #ffa746; border-collapse:collapse;}
+.shakedBox table th{background: #3e42e3;color: #fff;height: 0.65rem;line-height: 0.65rem;border: 1px solid #ffa746}
+.shakedBox table td{text-align: center;height: 0.65rem;line-height: 0.65rem;background: #fff;font-size: 0.2rem;border: 1px solid #ffa746}
+.shakedBox table th,.shakedBox table td{width: 25%;}
+.shakedBox .choose,.shakedBox .choose .active{position: relative}
+.shakedBox .choose ul{display: none;position: absolute;width: 100%;background: #fff;z-index: 999;border-top: 1px solid #dcdcdc;height: 3rem;overflow-y: scroll}
+.shakedBox .choose ul li{border-bottom: 1px solid #dcdcdc;padding: 0.1rem 0.3rem;box-sizing: border-box; }
+.shakedBox .choose .active img{   width: 0.33rem;margin-left: 0.1rem}
+.shakedBox .choose .active{-webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
+.shakedBox .syfw input[type="radio"]{margin: 0 0.2rem}

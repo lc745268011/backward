@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <link rel="stylesheet" href="../res/css/reset.css"/>
+    <script src="../res/js/jquery-1.10.2.min.js"></script>
+    <title></title>
+</head>
+<body class="bg shakedBox">
+<div class="title">
+    <img src="../res/img/title.png" alt="" width="100%">
+</div>
+<div class="title-long">
+    九宫格
+</div>
+<div class="marketing1 shaked">
+    <div class="cl vCenter">
+        <div class="l title">活动标题</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">参与人数</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">抽奖次数</div>
+        <div class="l cl infoBox vCenter"><div class="l cl vCenter"><label for="no" class="l">不限</label><input type="radio" name="choujiang" id="no" class="l"></div><div class="l cl vCenter"><label for="yes" class="l">限制</label><input type="radio" name="choujiang" id="yes" class="l"></div><div class="l vCenter">每人有<input type="text" class="num">次抽奖机会</div></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">中奖次数</div>
+        <div class="l cl infoBox vCenter"><div class="l cl vCenter"><label for="no1" class="l">不限</label><input type="radio" name="choujiang1" id="no1" class="l"></div><div class="l cl vCenter"><label for="yes1" class="l">限制</label><input type="radio" name="choujiang1" id="yes1" class="l"></div><div class="l vCenter">每人有<input type="text" class="num">次抽奖机会</div></div>
+
+    </div>
+</div>
+<div style="padding: 0.36rem 0.3rem 0">
+    <div>奖项设置</div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">运营商：</div>
+        <ul class="l vCenter yys">
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+        </ul>
+    </div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">使用范围：</div>
+        <ul class="l vCenter syfw">
+            <li><label for="">山东本地</label><input type="checkbox"></li>
+            <li><label for="">全国漫游</label><input type="checkbox"></li>
+        </ul>
+    </div>
+    <table style="margin: 0.36rem 0 0">
+        <tr>
+            <th>奖品名称</th>
+            <th>奖品规格</th>
+            <th>中奖率</th>
+            <th>领取人数</th>
+        </tr>
+        <tr>
+            <td>一等奖</td>
+            <td class="choose">
+                <div class="active box vCenter" onclick="active(this)">
+                    <span>谢谢参与</span> <img src="../res/img/jt.png" alt="">
+                </div>
+                <ul class="chooseList">
+                    <li onclick="choose(this)">1</li>
+                    <li onclick="choose(this)">2</li>
+                    <li onclick="choose(this)">3</li>
+                    <li onclick="choose(this)">4</li>
+                    <li onclick="choose(this)">5</li>
+                </ul></td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>一等奖</td>
+            <td class="choose">
+                <div class="active box vCenter" onclick="active(this)">
+                    <span>谢谢参与</span> <img src="../res/img/jt.png" alt="">
+                </div>
+                <ul class="chooseList">
+                    <li onclick="choose(this)">1</li>
+                    <li onclick="choose(this)">2</li>
+                    <li onclick="choose(this)">3</li>
+                    <li onclick="choose(this)">4</li>
+                    <li onclick="choose(this)">5</li>
+                </ul></td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+    </table>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">活动分享：是否限制分享朋友圈</div>
+        <ul class="l vCenter syfw">
+            <li><input type="radio"><label for="">是</label></li>
+            <li><input type="radio"><label for="">否</label></li>
+        </ul>
+    </div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">领奖验证：是否短信验证</div>
+        <ul class="l vCenter syfw">
+            <li><input type="radio"><label for="">是</label></li>
+            <li><input type="radio"><label for="">否</label></li>
+        </ul>
+    </div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">领奖验证：是否会员/工号</div>
+        <ul class="l vCenter syfw">
+            <li><input type="radio"><label for="">是</label></li>
+            <li><input type="radio"><label for="">否</label></li>
+        </ul>
+    </div>
+</div>
+<div class="cl" style="padding: 0 0.7rem">
+    <div class="regSubmit l">
+        预览预案
+    </div>
+    <div class="regSubmit r">
+        下载预案
+    </div>
+</div>
+<div class="copyright" style="margin: 0.5rem 0">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
+</div>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        function active(obj) {
+            event.stopImmediatePropagation();
+            $('.active').not(obj).siblings('.chooseList').stop(false).slideUp();
+            $(obj).siblings().slideToggle();
+        }
+        function choose(obj ) {
+            $(obj).parent().siblings().find('span').text($(obj).text()).parent().siblings().slideUp()
+        }
+        $(document).bind("click",function(){
+            $('.chooseList').slideUp()
+        })
+</script>
+</body>
+</html>

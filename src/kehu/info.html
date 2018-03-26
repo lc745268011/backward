@@ -62,7 +62,7 @@
                 <div class="active box" onclick="active(this)">
                     <span>请选择所属行业</span> <img src="../res/img/jt.png" alt="" class="jt">
                 </div>
-                <ul>
+                <ul class="chooseList">
                     <li onclick="choose(this)">1</li>
                     <li onclick="choose(this)">2</li>
                     <li onclick="choose(this)">3</li>
@@ -89,7 +89,7 @@
                 <div class="active box" onclick="active(this)">
                     <span>请选择协议模式</span> <img src="../res/img/jt.png" alt="" class="jt">
                 </div>
-                <ul>
+                <ul class="chooseList">
                     <li onclick="choose(this)">1</li>
                     <li onclick="choose(this)">2</li>
                     <li onclick="choose(this)">3</li>
@@ -122,6 +122,7 @@
         })(document, window);
         function active(obj) {
             event.stopImmediatePropagation();
+            $('.active').not(obj).siblings('.chooseList').slideUp();
             $(obj).siblings().slideToggle();
         }
         function choose(obj ) {
