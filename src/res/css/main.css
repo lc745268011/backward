@@ -26,3 +26,16 @@
 .regSubmit img{width: 2.63rem;}
 .explain{width: 6.22rem;margin: 0 auto;font-size: 0.2rem;color: #000}
 .time .box{margin: 0 0.2rem;background: #ffa746;color: #fff;padding: 0 0.2rem}
+.title-line{font-size: 0.16rem;color: #4045e1;}
+.title-line:before{width: 0.48rem;height: 0.02rem;content: '';background: #4045e1;margin-right: 0.1rem}
+.title-line:after{width: 0.48rem;height: 0.02rem;content: '';background: #4045e1;margin-left: 0.1rem}
+.marketing{width: 6.9rem;margin: 0 0.3rem;background: url("../img/marketingBg.png");background-size: 100% 100%;margin-top: 0.44rem;padding: 0.9rem 0.76rem 0.5rem;box-sizing: border-box}
+.marketing ul li{color: #fff;width: 33.3%;float: left;margin-bottom: 0.3rem;font-size: 0.20rem;}
+.marketing ul li:nth-child(3n){text-align: right}
+.marketing ul li:nth-child(3n-1){text-align: center}
+.marketing ul li:nth-child(3n-2){text-align: left}
+.marketing ul li label{margin-right: 0.2rem}
+.marketing1{background: url("../img/marketingBg1.png");width: 6.9rem;margin: 0 0.3rem;box-sizing: border-box;margin-top: 0.5rem;padding: 0.24rem 0.75rem;background-size: 100% 100%;}
+.marketing1 ul li{background: url("../img/marketingLi.png");width: 1.95rem;height: 0.6rem;background-size: 100% 100%;color: #fff;float: left;margin-top: 0.4rem}
+.marketing1 ul li label{margin-right: 0.2rem}
+.marketing1 ul li:nth-child(2n){margin-left: 1.4rem}
