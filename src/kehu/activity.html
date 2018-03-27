@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/skins/minimal/blue.css">
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <link rel="stylesheet" href="../res/css/reset.css"/>
+    <script src="../res/js/jquery-1.10.2.min.js"></script>
+    <script src="../res/js/icheck.min.js"></script>
+    <title></title>
+</head>
+<body class="bg">
+<div class="title">
+    <img src="../res/img/title.png" alt="" width="100%">
+</div>
+<div class="title-long">
+    具体活动
+</div>
+
+<div class="marketing1">
+
+    <ul class="cl">
+        <li class="vCenter">
+            <label for="a1">服务号</label>
+            <input type="checkbox" name="iCheck" id="a1">
+        </li>
+        <li class="vCenter">
+            <label for="a2">服务号</label>
+            <input type="checkbox" name="iCheck" id="a2">
+
+        </li>
+        <li class="vCenter">
+            <label for="a3">服务号</label>
+            <input type="checkbox" name="iCheck" id="a3">
+
+        </li>
+        <li class="vCenter">
+            <label for="a4">服务号</label>
+            <input type="checkbox" name="iCheck" id="a4">
+
+        </li>
+        <li class="vCenter">
+            <label for="a1">服务号</label>
+            <input type="checkbox" name="iCheck" id="a1">
+        </li>
+        <li class="vCenter">
+            <label for="a2">服务号</label>
+            <input type="checkbox" name="iCheck" id="a2">
+
+        </li>
+        <li class="vCenter">
+            <label for="a3">服务号</label>
+            <input type="checkbox" name="iCheck" id="a3">
+
+        </li>
+        <li class="vCenter">
+            <label for="a4">服务号</label>
+            <input type="checkbox" name="iCheck" id="a4">
+
+        </li>
+    </ul>
+</div>
+<div class="cl" style="padding: 0 0.7rem">
+    <div class="regSubmit l">
+        上一步
+    </div>
+    <div class="regSubmit r">
+        下一步
+    </div>
+</div>
+<div class="copyright" style="margin: 0.5rem 0">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
+</div>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+<script>
+    $(document).ready(function(){
+        $('.marketing input').iCheck({
+            checkboxClass: 'iradio_minimal-blue',
+            radioboxClass: 'icheckbox_minimal-blue',
+            increaseArea: '10%' // optional
+        });
+        $('.marketing1 input').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioboxClass: 'iradio_minimal-blue',
+            increaseArea: '10%' // optional
+        });
+    });
+</script>
+</body>
+</html>

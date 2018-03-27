@@ -35,7 +35,7 @@
 .marketing ul li:nth-child(3n-1){text-align: center}
 .marketing ul li:nth-child(3n-2){text-align: left}
 .marketing ul li label{margin-right: 0.2rem}
-.marketing1{background: url("../img/marketingBg1.png");width: 6.9rem;margin: 0 0.3rem;box-sizing: border-box;margin-top: 0.5rem;padding: 0.24rem 0.75rem;background-size: 100% 100%;}
+.marketing1{background: url("../img/marketingBg1.png");width: 6.9rem;margin: 0 0.3rem;box-sizing: border-box;margin-top: 0.5rem;padding: 0.24rem 0.75rem 0.64rem;background-size: 100% 100%;}
 .marketing1 ul li{background: url("../img/marketingLi.png");width: 1.95rem;height: 0.6rem;background-size: 100% 100%;color: #fff;float: left;margin-top: 0.4rem;-webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
 .marketing1 ul li label{margin-right: 0.2rem}
 .marketing1 ul li:nth-child(2n){margin-left: 1.4rem}
