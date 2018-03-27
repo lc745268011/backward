@@ -63,3 +63,6 @@
 .shakedBox .choose .active img{   width: 0.33rem;margin-left: 0.1rem}
 .shakedBox .choose .active{-webkit-box-pack: center; -moz-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
 .shakedBox .syfw input[type="radio"]{margin: 0 0.2rem}
+.shakedBox .fanli{width: 2.12rem;height: 1.48rem;margin: 0 auto;display: block;margin-bottom: 0.37rem}
+.shakedBox .card td:first-child{width: 1.2rem}
+.shakedBox .card td{width: 5.6rem}

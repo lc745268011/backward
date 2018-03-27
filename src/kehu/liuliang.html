@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <link rel="stylesheet" href="../res/css/reset.css"/>
+    <script src="../res/js/jquery-1.10.2.min.js"></script>
+    <title></title>
+</head>
+<style>
+    .shakedBox .choose .active{width: 4.44rem;height: 0.55rem;line-height: 0.55rem;border-radius: 0.08rem;background: #fff;
+        border:1px solid #dcdcdc;padding: 0 0.3rem;box-sizing: border-box}
+</style>
+<body class="bg shakedBox">
+<div class="title">
+    <img src="../res/img/title.png" alt="" width="100%">
+</div>
+<div class="title-long">
+    流量卡
+</div>
+<div style="padding: 0.36rem 0.3rem 0">
+    <div>制卡范例</div>
+    <img src="../res/img/fanli.png" alt="" class="fanli">
+    <img src="../res/img/fanli.png" alt="" class="fanli">
+    <table class="card">
+        <tr>
+            <td>制卡材质</td>
+            <td>
+                <label for="paper">纸质</label>
+                <input type="radio" name="material" id="paper">
+                <label for="pvc">PVC</label>
+                <input type="radio" name="material" id="pvc">
+            </td>
+        </tr>
+        <tr>
+            <td>成品尺寸</td>
+            <td>8.6CMx5.4CM </td>
+        </tr>
+        <tr>
+            <td>设计尺寸</td>
+            <td>8.8CMx5.6CM</td>
+        </tr>
+    </table>
+</div>
+<div style="padding: 0.36rem 0.3rem 0">
+    <div>产品配置</div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">运营商：</div>
+        <ul class="l vCenter yys">
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+            <li><label for="">联通</label><input type="checkbox"></li>
+        </ul>
+    </div>
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">使用范围：</div>
+        <ul class="l vCenter syfw">
+            <li><label for="">山东本地</label><input type="checkbox"></li>
+            <li><label for="">全国漫游</label><input type="checkbox"></li>
+        </ul>
+    </div>
+    <div class="choose cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">选择产品：</div>
+        <div style="position: relative">
+            <div class="active box l" onclick="active(this)">
+                <span>请选择</span> <img src="../res/img/jt.png" alt="" class="jt">
+            </div>
+            <ul class="chooseList" style="top: 0.55rem">
+                <li onclick="choose(this)">1</li>
+                <li onclick="choose(this)">2</li>
+                <li onclick="choose(this)">3</li>
+                <li onclick="choose(this)">4</li>
+                <li onclick="choose(this)">5</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="choose cl vCenter" style="margin-top: 0.16rem;">
+        <div class="l">生成数量：</div>
+        <input type="text" class="active" placeholder="请填写">
+
+    </div>
+    <div style="margin-top: 0.16rem;">
+        制卡说明：<br>
+        需要提供制卡素材，仿照范例提供卡面的设计文字，例如主题，宣传语，卡背面的活动说明，注意事项等，以及扫码后，领取奖品页面的主题以及领取页面的宣传内容、号码限制等
+    </div>
+
+</div>
+
+<div class="cl" style="padding: 0 0.7rem">
+    <div class="regSubmit l">
+        预览预案
+    </div>
+    <div class="regSubmit r">
+        下载预案
+    </div>
+</div>
+<div class="copyright" style="margin: 0.5rem 0">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
+</div>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        function active(obj) {
+            event.stopImmediatePropagation();
+            $(obj).siblings().slideToggle();
+        }
+        function choose(obj ) {
+            $(obj).parent().siblings().find('span').text($(obj).text()).parent().siblings().slideUp()
+        }
+        $(document).bind("click",function(){
+            $('.chooseList').slideUp()
+        })
+</script>
+</body>
+</html>
