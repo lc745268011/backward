@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--移动设备-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="../res/css/main.css"/>
+    <link rel="stylesheet" href="../res/css/reset.css"/>
+    <script src="../res/js/jquery-1.10.2.min.js"></script>
+    <title></title>
+</head>
+<style>
+    .shakedBox .choose .active{width: 5.6rem;height: 0.55rem;line-height: 0.55rem;border-radius: 0.08rem;background: #fff;
+        border:1px solid #dcdcdc;padding: 0 0.3rem;box-sizing: border-box}
+    .shakedBox .choose{margin-top: 0.4rem}
+</style>
+<body class="bg shakedBox">
+<div class="title">
+    <img src="../res/img/title.png" alt="" width="100%">
+</div>
+<div class="title-long">
+    问卷抽奖
+</div>
+<div class="marketing1 shaked">
+    <div class="cl vCenter">
+        <div class="l title">活动标题</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter syfw">
+        <div class="l cl vCenter">
+            <div class="l cl vCenter">
+                <label for="name" class="l">填写姓名</label>
+                <input type="radio" name="choose" id="name" class="l">
+            </div>
+            <div class="l cl vCenter">
+                <label for="tel" class="l">填写手机</label>
+                <input type="radio" name="choose" id="tel" class="l">
+            </div>
+        </div>
+            <div class="l cl vCenter">
+                <label for="email" class="l">填写邮箱</label>
+                <input type="radio" name="choose" id="email" class="l">
+            </div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">题目个数</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">每题分值</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">领奖分数</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">参与人数</div>
+        <div class="l infoBox"><input type="number" placeholder="请填写"></div>
+    </div>
+</div>
+<div class="cl" style="padding: 0 0.7rem">
+    <div class="regSubmit l">
+        上一页
+    </div>
+    <div class="regSubmit r">
+        下一页
+    </div>
+</div>
+<div class="copyright" style="margin: 0.5rem 0">
+    云上流量商城版权所有<br/>
+    受山东联通委托提供技术支持
+</div>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        function active(obj) {
+            event.stopImmediatePropagation();
+            $('.active').not(obj).siblings('.chooseList').stop(false).slideUp();
+            $(obj).siblings().slideToggle();
+        }
+        function choose(obj ) {
+            $(obj).parent().siblings().find('span').text($(obj).text()).parent().siblings().slideUp()
+        }
+        $(document).bind("click",function(){
+            $('.chooseList').slideUp()
+        })
+</script>
+</body>
+</html>

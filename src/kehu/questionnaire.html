@@ -15,7 +15,7 @@
     <title></title>
 </head>
 <style>
-    .shakedBox .choose .active{width: 4.44rem;height: 0.55rem;line-height: 0.55rem;border-radius: 0.08rem;background: #fff;
+    .shakedBox .choose .active{width: 5.6rem;height: 0.55rem;line-height: 0.55rem;border-radius: 0.08rem;background: #fff;
         border:1px solid #dcdcdc;padding: 0 0.3rem;box-sizing: border-box}
     .shakedBox .choose{margin-top: 0.4rem}
 </style>
@@ -24,34 +24,44 @@
     <img src="../res/img/title.png" alt="" width="100%">
 </div>
 <div class="title-long">
-    流量卡
+    调查问卷
+</div>
+<div class="marketing1 shaked">
+    <div class="cl vCenter">
+        <div class="l title">活动标题</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter syfw">
+        <div class="l cl vCenter">
+            <div class="l cl vCenter">
+                <label for="name" class="l">填写姓名</label>
+                <input type="radio" name="choose" id="name" class="l">
+            </div>
+            <div class="l cl vCenter">
+                <label for="tel" class="l">填写手机</label>
+                <input type="radio" name="choose" id="tel" class="l">
+            </div>
+        </div>
+            <div class="l cl vCenter">
+                <label for="email" class="l">填写邮箱</label>
+                <input type="radio" name="choose" id="email" class="l">
+            </div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">题目个数</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">每题分值</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
+    <div class="cl vCenter">
+        <div class="l title">领奖分数</div>
+        <div class="l infoBox"><input type="text" placeholder="请填写"></div>
+    </div>
 </div>
 <div style="padding: 0.36rem 0.3rem 0">
-    <div>制卡范例</div>
-    <img src="../res/img/fanli.png" alt="" class="fanli">
-    <img src="../res/img/fanli.png" alt="" class="fanli">
-    <table class="card">
-        <tr>
-            <td>制卡材质</td>
-            <td>
-                <label for="paper">纸质</label>
-                <input type="radio" name="material" id="paper">
-                <label for="pvc">PVC</label>
-                <input type="radio" name="material" id="pvc">
-            </td>
-        </tr>
-        <tr>
-            <td>成品尺寸</td>
-            <td>8.6CMx5.4CM </td>
-        </tr>
-        <tr>
-            <td>设计尺寸</td>
-            <td>8.8CMx5.6CM</td>
-        </tr>
-    </table>
-</div>
-<div style="padding: 0.36rem 0.3rem 0">
-    <div>产品配置</div>
+    <div>奖项设置</div>
     <div class="cl vCenter" style="margin-top: 0.16rem;">
         <div class="l">运营商：</div>
         <ul class="l vCenter yys">
@@ -61,7 +71,7 @@
             <li><label for="">联通</label><input type="checkbox"></li>
         </ul>
     </div>
-    <div class="cl vCenter" style="margin-top: 0.4rem;">
+    <div class="cl vCenter" style="margin-top: 0.16rem;">
         <div class="l">使用范围：</div>
         <ul class="l vCenter syfw">
             <li><label for="">山东本地</label><input type="checkbox"></li>
@@ -84,18 +94,14 @@
         </div>
 
     </div>
-    <div class="choose cl vCenter">
-        <div class="l">生成数量：</div>
-        <input type="text" class="active" placeholder="请填写">
-
+    <div class="cl vCenter" style="margin-top: 0.4rem;">
+        <div class="l">活动分享：是否分享</div>
+        <ul class="l vCenter syfw">
+            <li><input type="radio"><label for="">是</label></li>
+            <li><input type="radio"><label for="">否</label></li>
+        </ul>
     </div>
-    <div style="margin-top: 0.4rem;">
-        制卡说明：<br>
-        需要提供制卡素材，仿照范例提供卡面的设计文字，例如主题，宣传语，卡背面的活动说明，注意事项等，以及扫码后，领取奖品页面的主题以及领取页面的宣传内容、号码限制等
-    </div>
-
 </div>
-
 <div class="cl" style="padding: 0 0.7rem">
     <div class="regSubmit l">
         预览预案
@@ -123,6 +129,7 @@
         })(document, window);
         function active(obj) {
             event.stopImmediatePropagation();
+            $('.active').not(obj).siblings('.chooseList').stop(false).slideUp();
             $(obj).siblings().slideToggle();
         }
         function choose(obj ) {
